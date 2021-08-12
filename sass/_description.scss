@@ -1,0 +1,28 @@
+.description {
+  background: #161c24;
+  .description__presentation {
+    text-align: center;
+    h6 {
+      letter-spacing: 1px;
+      color: #919eab;
+      margin: 0;
+      padding: 20px;
+      font-size: 12px;
+      font-family: "Public Sans", sans-serif;
+    }
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      margin: 10px;
+      line-height: 1;
+      font-family: "Public Sans", sans-serif;
+    }
+    h3 {
+      color: #00ab55;
+      font-family: "Public Sans", sans-serif;
+      margin: 10px;
+      padding: 10px 0 20px;
+      font-size: 20px;
+    }
+  }
+}

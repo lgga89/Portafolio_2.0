@@ -1,8 +1,16 @@
 header {
-  background: red;
+  background: #161c24;
   text-align: center;
   .header__img {
     margin-top: 20px;
     width: 70px;
+  }
+  .header__nav-menu {
+    padding: 10px;
+    .header__enlace-menu {
+      margin: 0 10px 0px;
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }

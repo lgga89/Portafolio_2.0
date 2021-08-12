@@ -342,11 +342,54 @@ template {
 }
 
 header {
-  background: red;
+  background: #161c24;
   text-align: center;
 }
 
 header .header__img {
   margin-top: 20px;
   width: 70px;
+}
+
+header .header__nav-menu {
+  padding: 10px;
+}
+
+header .header__nav-menu .header__enlace-menu {
+  margin: 0 10px 0px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.description {
+  background: #161c24;
+}
+
+.description .description__presentation {
+  text-align: center;
+}
+
+.description .description__presentation h6 {
+  letter-spacing: 1px;
+  color: #919eab;
+  margin: 0;
+  padding: 20px;
+  font-size: 12px;
+  font-family: "Public Sans", sans-serif;
+}
+
+.description .description__presentation h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 10px;
+  line-height: 1;
+  font-family: "Public Sans", sans-serif;
+}
+
+.description .description__presentation h3 {
+  color: #00ab55;
+  font-family: "Public Sans", sans-serif;
+  margin: 10px;
+  padding: 10px 0 20px;
+  font-size: 20px;
 }
