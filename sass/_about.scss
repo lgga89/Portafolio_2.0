@@ -1,0 +1,32 @@
+.about {
+  text-align: left;
+
+  .about__container {
+    margin-top: 50px;
+    background: #00ab5667;
+    padding: 30px 20px;
+    color: #fff;
+    line-height: 1.4;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 40px;
+    .about__button {
+      text-align: center;
+      button {
+        border-color: rgb(255, 255, 255);
+        background: transparent;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        align-items: center;
+        padding: 10px 21px;
+        font-family: "Public Sans";
+        font-weight: 700;
+        text-transform: none;
+        margin: 15px 21px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
