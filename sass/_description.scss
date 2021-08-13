@@ -1,5 +1,5 @@
 .description {
-  background: #161c24;
+  background: $color_fondo;
   .description__presentation {
     text-align: center;
     h6 {
@@ -18,7 +18,7 @@
       font-family: "Public Sans", sans-serif;
     }
     h3 {
-      color: #00ab55;
+      color: $color_primario;
       font-family: "Public Sans", sans-serif;
       margin: 10px;
       padding: 10px 0 15px;

@@ -1,6 +1,6 @@
 .presentation {
   text-align: center;
-  background: #161c24;
+  background: $color_fondo;
   h2 {
     margin: 0;
     color: #fff;
@@ -10,7 +10,7 @@
     font-size: 30px;
     mark {
       background: none;
-      color: #00ab55;
+      color: $color_primario;
     }
   }
 }
