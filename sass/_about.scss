@@ -3,7 +3,7 @@
 
   .about__container {
     margin-top: 50px;
-    background: #00ab5667;
+    background: $color_about;
     padding: 30px 20px;
     color: #fff;
     line-height: 1.4;
@@ -26,6 +26,30 @@
         text-transform: none;
         margin: 15px 21px;
         border-radius: 10px;
+      }
+    }
+  }
+}
+
+.about__skills {
+  background: $color_skills;
+  margin-top: 50px;
+  padding: 30px 20px;
+  color: #fff;
+  line-height: 1.4;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 40px;
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .skills__icon {
+      padding: 10px;
+      text-align: center;
+      .icon {
+        font-size: 50px;
       }
     }
   }
