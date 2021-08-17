@@ -1,0 +1,19 @@
+.contact {
+  color: #fff;
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  .contact__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    .contact__ico {
+      margin: 10px;
+      text-align: center;
+      .ico-Contact {
+        color: #00ab55;
+        font-size: 30px;
+      }
+    }
+  }
+}
