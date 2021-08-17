@@ -554,11 +554,19 @@ header .header__nav-menu .header__enlace-menu {
 }
 
 .contact .contact__container .contact__ico {
+  text-decoration: none;
   margin: 10px;
   text-align: center;
+  color: #fff;
 }
 
 .contact .contact__container .contact__ico .ico-Contact {
   color: #00ab55;
   font-size: 30px;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  font-family: "Public Sans", sans-serif;
 }
