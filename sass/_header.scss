@@ -1,7 +1,9 @@
 body {
-  padding: 0 20px;
   background: $color_fondo;
 }
+//------------------MENU-----------------------
+
+//----------------------------------------------------------
 header {
   background: $color_fondo;
   text-align: center;
@@ -11,6 +13,7 @@ header {
   }
   .header__nav-menu {
     padding: 10px;
+    display: none;
     .header__enlace-menu {
       margin: 0 10px 0px;
       color: #fff;

@@ -8,21 +8,36 @@
     <link rel="icon" type="image/png" href="images/favicom.png">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <title>Luis García | Desarrollador Web</title>
+
     <link href="//fonts.googleapis.com/css?family=Public Sans:500,300,700&amp;subset=latin&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/menu.js"></script>
 </head>
 
 <body>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label id="trigger" for="menu-toggle"></label>
+    <label id="burger" for="menu-toggle"></label>
+
+    <ul id="menu">
+        <li><a href="#sobremi">Sobre mi</a></li>
+        <li><a href="#habilidades">Mis habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contactame</a></li>
+    </ul>
+
+
     <header class="header">
         <nav class="header__nav">
             <div class="header__logo">
-                <a class="header_enlace-logo" href=""><img class="header__img" src="images/favicom.png" alt=""></a>
+                <a class="header_enlace-logo" href="">
+                    <img class="header__img" src="images/favicom.png" alt=""></a>
             </div>
             <div class="header__nav-menu">
-                <a class="header__enlace-menu" href="">Sobre de mi</a>
-                <a class="header__enlace-menu" href="">Resumen Laboral</a>
-                <a class="header__enlace-menu" href="">Educación</a>
+                <a class="header__enlace-menu" href="">Sobre mi</a>
+                <a class="header__enlace-menu" href="">Mis habilidades</a>
                 <a class="header__enlace-menu" href="">Proyectos</a>
                 <a class="header__enlace-menu" href="">Contactame</a>
             </div>
@@ -44,18 +59,19 @@
             agradables<mark>.</mark></h2>
     </section>
     <section class="about">
-        <div class="about__container">
+        <div class="about__container" id="sobremi">
             <h5>Sobre mi</h5>
             <p>Soy un desarrollador Frontend Junior con experiencia cuya pasión es crear sitios web con los que los
                 usuarios
                 disfruten interactuando.</p>
-            <p>Siempre busco mejorar mis habilidades para crecer continuamente profesionalmente para poder contribuir de
+            <p>Siempre busco mejorar mis habilidades para crecer continuamente profesionalmente para poder
+                contribuir de
                 manera consistente al grupo de trabajo con el que estoy.</p>
             <div class="about__button">
                 <button> Descargar CV</button>
             </div>
         </div>
-        <div class=" about__skills">
+        <div class=" about__skills" id="habilidades">
             <h5>Mis habilidades:</h5>
             <p>Son muchas mis habilidades en el desarrollo web. Sin embargo, aquí te muestro las tecnologías y
                 herramientas con las cuales trabajo habitualmente. Por supuesto, siempre me mantengo al tanto de las
@@ -81,7 +97,7 @@
             </div>
         </div>
     </section>
-    <section class="project">
+    <section class="project" id="proyectos">
         <div class="project__title">
             <h2>Proyectos</h2>
         </div>
@@ -108,8 +124,8 @@
         </div>
 
     </section>
-    <section class="contact">
-        <h2>Conctact</h2>
+    <section class="contact" id="contacto">
+        <h2>Conctacto</h2>
         <h3>Conctactame si quieres que trabajemos juntos</h3>
         <div class="contact__container">
             <a href="mailto:lggarcia89@hotmail.com" class="contact__ico">
