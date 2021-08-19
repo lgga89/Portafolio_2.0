@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @-webkit-keyframes checked-anim {
-  200% {
+  100% {
     width: 3000px;
-    height: 1000px;
+    height: 500px;
   }
   100% {
     width: 100%;
@@ -11,9 +11,9 @@
   }
 }
 @keyframes checked-anim {
-  200% {
+  100% {
     width: 3000px;
-    height: 1000px;
+    height: 500px;
   }
   100% {
     width: 100%;
@@ -24,15 +24,15 @@
 
 @-webkit-keyframes not-checked-anim {
   0% {
-    width: 3000px;
-    height: 1000px;
+    width: 500px;
+    height: 300px;
   }
 }
 
 @keyframes not-checked-anim {
   0% {
-    width: 3000px;
-    height: 1000px;
+    width: 500px;
+    height: 300px;
   }
 }
 
@@ -153,8 +153,8 @@ body {
   border-bottom-right-radius: 100%;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  -webkit-animation: not-checked-anim 0.2s both;
-          animation: not-checked-anim 0.2s both;
+  -webkit-animation: not-checked-anim 0.5s both;
+          animation: not-checked-anim 0.5s both;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
