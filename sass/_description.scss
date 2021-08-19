@@ -4,6 +4,8 @@
   background: $color_fondo;
   .description__presentation {
     text-align: center;
+    margin: 0;
+    padding: 0;
     h6 {
       letter-spacing: 1px;
       color: #919eab;
@@ -15,7 +17,8 @@
     h1 {
       color: #fff;
       font-size: 45px;
-      margin: 10px;
+      padding: 25px;
+      margin: 0 10px;
       line-height: 1;
       font-family: "Public Sans", sans-serif;
     }
@@ -37,6 +40,47 @@
     img {
       width: 100%;
       display: block;
+    }
+  }
+}
+//-----------MEDIA-----------
+@media (min-width: 480px) {
+  .description {
+    .description__presentation {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .description {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 50px;
+    .description__presentation {
+      text-align: left;
+
+      h1 {
+        padding: 15px 0;
+      }
+      h3 {
+        font-size: 25px;
+      }
+      h6 {
+        padding: 10px;
+      }
+      p {
+        color: #fff;
+        font-size: 20px;
+        padding: 10px;
+
+        font-family: "Public Sans", sans-serif;
+      }
+    }
+    .description__imagen {
+      width: 40%;
     }
   }
 }

@@ -26,3 +26,14 @@
     }
   }
 }
+
+//-----MEDIA---------
+@media (min-width: 480px) {
+  .project {
+    .project__portafolio {
+      .project__icon {
+        font-size: 40px;
+      }
+    }
+  }
+}

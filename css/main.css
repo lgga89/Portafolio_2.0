@@ -36,11 +36,6 @@
   }
 }
 
-.header__img {
-  margin-top: 20px;
-  width: 70px;
-}
-
 li,
 a {
   border: 1 solid;
@@ -59,12 +54,6 @@ a {
 li {
   text-align: center;
   width: 100%;
-}
-
-a:focus {
-  display: block;
-  color: #333;
-  background-color: #eee;
 }
 
 html,
@@ -550,6 +539,8 @@ header .header__nav-menu .header__enlace-menu {
 
 .description .description__presentation {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .description .description__presentation h6 {
@@ -564,7 +555,8 @@ header .header__nav-menu .header__enlace-menu {
 .description .description__presentation h1 {
   color: #fff;
   font-size: 45px;
-  margin: 10px;
+  padding: 25px;
+  margin: 0 10px;
   line-height: 1;
   font-family: "Public Sans", sans-serif;
 }
@@ -590,6 +582,46 @@ header .header__nav-menu .header__enlace-menu {
   display: block;
 }
 
+@media (min-width: 480px) {
+  .description .description__presentation h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .description .description__presentation {
+    text-align: left;
+  }
+  .description .description__presentation h1 {
+    padding: 15px 0;
+  }
+  .description .description__presentation h3 {
+    font-size: 25px;
+  }
+  .description .description__presentation h6 {
+    padding: 10px;
+  }
+  .description .description__presentation p {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Public Sans", sans-serif;
+  }
+  .description .description__imagen {
+    width: 40%;
+  }
+}
+
 .presentation {
   text-align: center;
   background: #161c24;
@@ -610,19 +642,18 @@ header .header__nav-menu .header__enlace-menu {
 }
 
 .about {
-  text-align: left;
   margin-bottom: 20px;
   padding: 20px;
 }
 
 .about .about__container {
+  text-align: left;
   margin-top: 50px;
   background: #00ab5667;
   padding: 30px 20px;
   color: #fff;
   line-height: 1.4;
   font-family: "Public Sans", sans-serif;
-  font-weight: 500;
   font-size: 20px;
   border-radius: 40px;
 }
@@ -649,13 +680,13 @@ header .header__nav-menu .header__enlace-menu {
 }
 
 .about__skills {
+  text-align: left;
   background: #00614e;
   margin-top: 50px;
   padding: 30px 20px;
   color: #fff;
   line-height: 1.4;
   font-family: "Public Sans", sans-serif;
-  font-weight: 500;
   font-size: 20px;
   border-radius: 40px;
 }
@@ -678,6 +709,20 @@ header .header__nav-menu .header__enlace-menu {
 
 .about__skills .skills .skills__icon .icon {
   font-size: 50px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .about__container {
+    font-size: 18px;
+  }
+  .about .about__skills {
+    font-size: 18px;
+  }
 }
 
 .project {
@@ -712,6 +757,12 @@ header .header__nav-menu .header__enlace-menu {
 .project .project__portafolio .project__icon {
   width: 20%;
   font-size: 30px;
+}
+
+@media (min-width: 480px) {
+  .project .project__portafolio .project__icon {
+    font-size: 40px;
+  }
 }
 
 .contact {
