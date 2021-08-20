@@ -118,3 +118,94 @@ a {
 [type="checkbox"]:checked {
   display: none;
 }
+
+/*
+.menu__hambuerguesa {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  .header__logo {
+    .header__img {
+      width: 60px;
+    }
+  }
+
+  .nave {
+    font-family: "Public Sans", sans-serif;
+    color: #fff;
+    input:checked ~ ul {
+      display: block;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      padding-top: 10px;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid #00ab55;
+      border-radius: 5px;
+      width: 50px;
+      height: 50px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+ Estilo del boton cuando se pasa el mouse por encima
+    label:hover {
+      background: #00ab55;
+    }
+
+  Estilo del boton cuando el menú está expandido
+    input:checked ~ label {
+      background: #00ab55;
+    }
+
+    ul {
+      position: absolute;
+      display: none;
+      margin-top: 15px;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      ul:hover {
+        transition: background ease-in 0.5s;
+      }
+      li {
+        opacity: 0.9;
+        display: block;
+        background: #00ab55;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+      }
+    }
+  }
+}
+*/
+//MENU
+@media (min-width: 100px) {
+  .header__logo--nav {
+    .header__img--nav {
+      padding: 5px 5px;
+      width: 80px;
+      float: right;
+    }
+  }
+}
+
+//---HEADER
+@media (min-width: 768px) {
+  .header__logo {
+    .header__img {
+      display: none;
+    }
+  }
+}

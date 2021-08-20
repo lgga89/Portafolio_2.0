@@ -1,5 +1,5 @@
 .description {
-  margin-top: 40px;
+  margin-top: 100px;
   padding: 0 20px;
   background: $color_fondo;
   .description__presentation {
@@ -29,6 +29,9 @@
       padding: 10px 0 15px;
       font-size: 20px;
     }
+    p {
+      color: #fff;
+    }
   }
 
   .description__imagen {
@@ -44,6 +47,7 @@
   }
 }
 //-----------MEDIA-----------
+
 @media (min-width: 480px) {
   .description {
     .description__presentation {

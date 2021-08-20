@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @-webkit-keyframes checked-anim {
   100% {
@@ -145,6 +146,89 @@ a {
   display: none;
 }
 
+/*
+.menu__hambuerguesa {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  .header__logo {
+    .header__img {
+      width: 60px;
+    }
+  }
+
+  .nave {
+    font-family: "Public Sans", sans-serif;
+    color: #fff;
+    input:checked ~ ul {
+      display: block;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      padding-top: 10px;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid #00ab55;
+      border-radius: 5px;
+      width: 50px;
+      height: 50px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+ Estilo del boton cuando se pasa el mouse por encima
+    label:hover {
+      background: #00ab55;
+    }
+
+  Estilo del boton cuando el menú está expandido
+    input:checked ~ label {
+      background: #00ab55;
+    }
+
+    ul {
+      position: absolute;
+      display: none;
+      margin-top: 15px;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      ul:hover {
+        transition: background ease-in 0.5s;
+      }
+      li {
+        opacity: 0.9;
+        display: block;
+        background: #00ab55;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+      }
+    }
+  }
+}
+*/
+@media (min-width: 100px) {
+  .header__logo--nav .header__img--nav {
+    padding: 5px 5px;
+    width: 80px;
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .header__logo .header__img {
+    display: none;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -496,6 +580,7 @@ header {
 header .header__img {
   margin-top: 20px;
   width: 70px;
+  display: none;
 }
 header .header__nav-menu {
   padding: 10px;
@@ -508,7 +593,7 @@ header .header__nav-menu .header__enlace-menu {
 }
 
 .description {
-  margin-top: 40px;
+  margin-top: 100px;
   padding: 0 20px;
   background: #161c24;
 }
@@ -539,6 +624,9 @@ header .header__nav-menu .header__enlace-menu {
   margin: 10px;
   padding: 10px 0 15px;
   font-size: 20px;
+}
+.description .description__presentation p {
+  color: #fff;
 }
 .description .description__imagen {
   /* background-image: url(/images/Bg-Chaval.svg);
