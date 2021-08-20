@@ -64,9 +64,13 @@
     display: flex;
     .about__container {
       font-size: 18px;
+      width: 50%;
+      margin-right: 5px;
     }
     .about__skills {
       font-size: 18px;
+      width: 50%;
+      margin-left: 5px;
     }
   }
 } ;

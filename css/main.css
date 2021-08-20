@@ -21,21 +21,18 @@
     border-radius: 0;
   }
 }
-
 @-webkit-keyframes not-checked-anim {
   0% {
     width: 500px;
     height: 300px;
   }
 }
-
 @keyframes not-checked-anim {
   0% {
     width: 500px;
     height: 300px;
   }
 }
-
 li,
 a {
   border: 1 solid;
@@ -62,7 +59,7 @@ body {
   padding: 0;
   background-color: #03a9f4;
   font-family: "Roboto", sans-serif;
-  overflow: scroll;
+  overflow: auto;
 }
 
 #trigger,
@@ -75,7 +72,6 @@ body {
   background: #fff;
   width: 30px;
   height: 5px;
-  -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   cursor: pointer;
   z-index: 1;
@@ -100,36 +96,24 @@ body {
 
 #menu-toggle:checked + #trigger + #burger {
   top: 35px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
+  transform: rotate(180deg);
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 #menu-toggle:checked + #trigger + #burger:before {
   width: 20px;
   top: -2px;
   left: 18px;
-  -webkit-transform: rotate(45deg) translateX(-5px);
-          transform: rotate(45deg) translateX(-5px);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
+  transform: rotate(45deg) translateX(-5px);
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 #menu-toggle:checked + #trigger + #burger:after {
   width: 20px;
   top: 2px;
   left: 18px;
-  -webkit-transform: rotate(-45deg) translateX(-5px);
-          transform: rotate(-45deg) translateX(-5px);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
+  transform: rotate(-45deg) translateX(-5px);
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 #menu {
@@ -140,11 +124,9 @@ body {
   height: 110px;
   background-color: #00ab55;
   border-bottom-right-radius: 100%;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   -webkit-animation: not-checked-anim 0.5s both;
           animation: not-checked-anim 0.5s both;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -158,8 +140,8 @@ a {
   display: block;
 }
 
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
+[type=checkbox]:not(:checked),
+[type=checkbox]:checked {
   display: none;
 }
 
@@ -209,8 +191,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -354,9 +335,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -364,9 +345,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -375,9 +356,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -395,8 +376,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -428,10 +408,9 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -440,8 +419,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -449,7 +428,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -459,7 +438,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -514,17 +493,14 @@ header {
   background: #161c24;
   text-align: center;
 }
-
 header .header__img {
   margin-top: 20px;
   width: 70px;
 }
-
 header .header__nav-menu {
   padding: 10px;
   display: none;
 }
-
 header .header__nav-menu .header__enlace-menu {
   margin: 0 10px 0px;
   color: #fff;
@@ -536,13 +512,11 @@ header .header__nav-menu .header__enlace-menu {
   padding: 0 20px;
   background: #161c24;
 }
-
 .description .description__presentation {
   text-align: center;
   margin: 0;
   padding: 0;
 }
-
 .description .description__presentation h6 {
   letter-spacing: 1px;
   color: #919eab;
@@ -551,7 +525,6 @@ header .header__nav-menu .header__enlace-menu {
   font-size: 12px;
   font-family: "Public Sans", sans-serif;
 }
-
 .description .description__presentation h1 {
   color: #fff;
   font-size: 45px;
@@ -560,7 +533,6 @@ header .header__nav-menu .header__enlace-menu {
   line-height: 1;
   font-family: "Public Sans", sans-serif;
 }
-
 .description .description__presentation h3 {
   color: #00ab55;
   font-family: "Public Sans", sans-serif;
@@ -568,15 +540,13 @@ header .header__nav-menu .header__enlace-menu {
   padding: 10px 0 15px;
   font-size: 20px;
 }
-
 .description .description__imagen {
   /* background-image: url(/images/Bg-Chaval.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;*/
 }
-
 .description .description__imagen img {
   width: 100%;
   display: block;
@@ -587,15 +557,10 @@ header .header__nav-menu .header__enlace-menu {
     font-size: 50px;
   }
 }
-
 @media (min-width: 768px) {
   .description {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     padding: 10px;
     margin-bottom: 50px;
   }
@@ -621,12 +586,10 @@ header .header__nav-menu .header__enlace-menu {
     width: 40%;
   }
 }
-
 .presentation {
   text-align: center;
   background: #161c24;
 }
-
 .presentation h2 {
   margin: 0;
   color: #fff;
@@ -635,7 +598,6 @@ header .header__nav-menu .header__enlace-menu {
   line-height: 1.1;
   font-size: 30px;
 }
-
 .presentation h2 mark {
   background: none;
   color: #00ab55;
@@ -645,7 +607,6 @@ header .header__nav-menu .header__enlace-menu {
   margin-bottom: 20px;
   padding: 20px;
 }
-
 .about .about__container {
   text-align: left;
   margin-top: 50px;
@@ -657,20 +618,16 @@ header .header__nav-menu .header__enlace-menu {
   font-size: 20px;
   border-radius: 40px;
 }
-
 .about .about__container .about__button {
   text-align: center;
 }
-
 .about .about__container .about__button button {
   border-color: white;
   background: transparent;
   color: #fff;
   font-size: 15px;
   cursor: pointer;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px 21px;
   font-family: "Public Sans";
   font-weight: 700;
@@ -690,53 +647,44 @@ header .header__nav-menu .header__enlace-menu {
   font-size: 20px;
   border-radius: 40px;
 }
-
 .about__skills .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .about__skills .skills .skills__icon {
   padding: 10px;
   text-align: center;
 }
-
 .about__skills .skills .skills__icon .icon {
   font-size: 50px;
 }
 
 @media (min-width: 768px) {
   .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .about .about__container {
     font-size: 18px;
+    width: 50%;
+    margin-right: 5px;
   }
   .about .about__skills {
     font-size: 18px;
+    width: 50%;
+    margin-left: 5px;
   }
 }
-
 .project {
   padding: 20px;
   background: #fff;
   color: #55595c;
 }
-
 .project .project__title {
   font-size: 15px;
   font-family: "Public Sans", sans-serif;
   text-align: center;
 }
-
 .project .project__portafolio {
   text-align: center;
   background-color: #ece6e6;
@@ -744,16 +692,13 @@ header .header__nav-menu .header__enlace-menu {
   margin-bottom: 20px;
   border-radius: 10%;
 }
-
 .project .project__portafolio .title__project {
   font-family: "Public Sans", sans-serif;
 }
-
 .project .project__portafolio .project_imagen {
   width: 100%;
   border-radius: 10%;
 }
-
 .project .project__portafolio .project__icon {
   width: 20%;
   font-size: 30px;
@@ -764,32 +709,23 @@ header .header__nav-menu .header__enlace-menu {
     font-size: 40px;
   }
 }
-
 .contact {
   color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
 }
-
 .contact .contact__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 5px;
 }
-
 .contact .contact__container .contact__ico {
   text-decoration: none;
   margin: 10px;
   text-align: center;
   color: #fff;
 }
-
 .contact .contact__container .contact__ico .ico-Contact {
   color: #00ab55;
   font-size: 30px;
@@ -799,4 +735,4 @@ footer {
   text-align: center;
   color: #fff;
   font-family: "Public Sans", sans-serif;
-}
+}/*# sourceMappingURL=main.css.map */
