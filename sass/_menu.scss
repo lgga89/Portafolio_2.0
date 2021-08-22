@@ -209,3 +209,12 @@ a {
     }
   }
 }
+@media (min-width: 925px) {
+  .header__logo--nav {
+    .header__img--nav {
+      padding: 10px;
+      width: 80px;
+      float: right;
+    }
+  }
+}
