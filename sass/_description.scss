@@ -59,7 +59,7 @@
 }
 @media (min-width: 768px) {
   .description {
-    margin-top: 200px;
+    margin-top: 120px;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -86,6 +86,19 @@
     }
     .description__imagen {
       width: 40%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .description {
+    .description__presentation {
+      h1 {
+        font-size: 80px;
+      }
+      h3 {
+        font-size: 40px;
+      }
     }
   }
 }

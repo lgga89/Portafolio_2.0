@@ -604,6 +604,11 @@ body {
   background: #161c24;
 }
 
+.container {
+  margin: auto;
+  padding: auto;
+}
+
 header {
   text-align: center;
 }
@@ -719,7 +724,7 @@ header .header__nav-menu .header__enlace-menu {
 
 @media (min-width: 768px) {
   .description {
-    margin-top: 200px;
+    margin-top: 120px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -752,6 +757,15 @@ header .header__nav-menu .header__enlace-menu {
   }
 }
 
+@media (min-width: 1200px) {
+  .description .description__presentation h1 {
+    font-size: 80px;
+  }
+  .description .description__presentation h3 {
+    font-size: 40px;
+  }
+}
+
 .presentation {
   text-align: center;
   background: #161c24;
@@ -769,6 +783,21 @@ header .header__nav-menu .header__enlace-menu {
 .presentation h2 mark {
   background: none;
   color: #00ab55;
+}
+
+@media (min-width: 925px) {
+  .presentation h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .presentation {
+    padding: 0;
+  }
+  .presentation h2 {
+    font-size: 55px;
+  }
 }
 
 .about {
@@ -859,6 +888,19 @@ header .header__nav-menu .header__enlace-menu {
   }
 }
 
+@media (min-width: 925px) {
+  .about .about__container,
+  .about .about__skills {
+    padding: 40px;
+  }
+  .about .about__container h5,
+  .about .about__container p,
+  .about .about__skills h5,
+  .about .about__skills p {
+    font-size: 20px;
+  }
+}
+
 .project {
   padding: 20px;
   background: #fff;
@@ -866,12 +908,12 @@ header .header__nav-menu .header__enlace-menu {
 }
 
 .project .project__title {
-  font-size: 15px;
+  font-size: 30px;
   font-family: "Public Sans", sans-serif;
   text-align: center;
 }
 
-.project .project__portafolio {
+.project .project__container .project__portafolio {
   text-align: center;
   background-color: #ece6e6;
   padding-bottom: 10px;
@@ -879,16 +921,16 @@ header .header__nav-menu .header__enlace-menu {
   border-radius: 10%;
 }
 
-.project .project__portafolio .title__project {
+.project .project__container .project__portafolio .title__project {
   font-family: "Public Sans", sans-serif;
 }
 
-.project .project__portafolio .project_imagen {
+.project .project__container .project__portafolio .project_imagen {
   width: 100%;
   border-radius: 10%;
 }
 
-.project .project__portafolio .project__icon {
+.project .project__container .project__portafolio .project__icon {
   width: 20%;
   font-size: 30px;
 }
@@ -899,10 +941,32 @@ header .header__nav-menu .header__enlace-menu {
   }
 }
 
+@media (min-width: 925px) {
+  .project .project__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .project .project__container .project__portafolio {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project .project__container .project__portafolio .project__icon {
+    width: 30%;
+    font-size: 40px;
+  }
+}
+
 .contact {
   color: #fff;
   text-align: center;
   font-family: "Public Sans", sans-serif;
+}
+
+.contact h2 {
+  font-size: 50px;
 }
 
 .contact .contact__container {

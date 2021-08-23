@@ -14,3 +14,19 @@
     }
   }
 }
+
+@media (min-width: 925px) {
+  .presentation {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .presentation {
+    padding: 0;
+    h2 {
+      font-size: 55px;
+    }
+  }
+}

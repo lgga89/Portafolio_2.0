@@ -73,4 +73,16 @@
       margin-left: 5px;
     }
   }
-} ;
+}
+@media (min-width: 925px) {
+  .about {
+    .about__container,
+    .about__skills {
+      padding: 40px;
+      h5,
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
