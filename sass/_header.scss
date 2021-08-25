@@ -3,11 +3,6 @@ body {
 }
 //------------------container-----------------------
 
-.container {
-  margin: auto;
-  padding: auto;
-}
-
 //----------------------------------------------------------
 header {
   //background: $color_fondo;
@@ -54,6 +49,23 @@ header {
         a {
           text-align: left;
           font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 0 5%;
+
+    .header {
+      padding: 0;
+      .header__nav {
+        .header__nav-menu {
+          a {
+            margin: 0 20px 0 0;
+          }
         }
       }
     }

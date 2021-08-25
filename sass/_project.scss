@@ -19,7 +19,9 @@
       }
       .project_imagen {
         width: 100%;
-        border-radius: 10%;
+        height: 60%;
+        border-top-left-radius: 30px 30px;
+        border-top-right-radius: 30px 30px;
       }
       .project__icon {
         width: 20%;

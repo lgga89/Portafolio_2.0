@@ -22,11 +22,24 @@
     }
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .presentation {
     padding: 0;
+
     h2 {
+      padding: 0;
       font-size: 55px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .presentation {
+    padding: 150px 0;
+
+    h2 {
+      font-size: 60px;
+      text-align: center;
     }
   }
 }
