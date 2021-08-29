@@ -600,6 +600,10 @@ template {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #161c24;
 }
