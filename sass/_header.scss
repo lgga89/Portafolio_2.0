@@ -4,10 +4,13 @@ html {
 
 body {
   background: $color_fondo;
+}
+//------------------container-----------------------
+
+.container__principal {
   max-width: 1600px;
   margin: 0 auto;
 }
-//------------------container-----------------------
 
 //----------------------------------------------------------
 header {
