@@ -606,6 +606,8 @@ html {
 
 body {
   background: #161c24;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 header {
@@ -1107,3 +1109,4 @@ footer {
   color: #fff;
   font-family: "Public Sans", sans-serif;
 }
+/*# sourceMappingURL=main.css.map */
