@@ -18,7 +18,7 @@
       position: relative;
       cursor: pointer;
       overflow: hidden;
-
+      width: 100%;
       .title__project {
         font-family: "Public Sans", sans-serif;
       }
@@ -102,9 +102,11 @@
   .project {
     .project__container {
       display: flex;
+      height: 380px;
 
       .project__portafolio {
         margin: 10px;
+
         .capa {
           .capa__container {
             margin-top: 20%;
@@ -143,7 +145,7 @@
           }
         }
         .project__icon {
-          width: 30%;
+          width: 20%;
           font-size: 40px;
         }
       }

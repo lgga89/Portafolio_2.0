@@ -889,12 +889,17 @@ header .header__nav-menu .header__enlace-menu {
 }
 
 .about__skills .skills .skills__icon {
-  padding: 10px;
+  width: 15%;
+  padding: 20px;
   text-align: center;
 }
 
 .about__skills .skills .skills__icon .icon {
   font-size: 50px;
+}
+
+.about__skills .skills .skills__icon .skills__name {
+  font-size: 10px;
 }
 
 @media (min-width: 768px) {
@@ -912,6 +917,13 @@ header .header__nav-menu .header__enlace-menu {
     font-size: 18px;
     width: 50%;
     margin-left: 5px;
+  }
+  .about__skills .skills .skills__icon {
+    text-align: center;
+    padding: 10px;
+  }
+  .about__skills .skills .skills__icon .skills__name {
+    font-size: 13px;
   }
 }
 
@@ -955,6 +967,7 @@ header .header__nav-menu .header__enlace-menu {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  width: 100%;
 }
 
 .project .project__container .project__portafolio .title__project {
@@ -1039,6 +1052,7 @@ header .header__nav-menu .header__enlace-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 380px;
   }
   .project .project__container .project__portafolio {
     margin: 10px;
@@ -1068,7 +1082,7 @@ header .header__nav-menu .header__enlace-menu {
     font-size: 20px;
   }
   .project .project__container .project__portafolio .project__icon {
-    width: 30%;
+    width: 20%;
     font-size: 40px;
   }
 }
@@ -1112,4 +1126,3 @@ footer {
   color: #fff;
   font-family: "Public Sans", sans-serif;
 }
-/*# sourceMappingURL=main.css.map */
