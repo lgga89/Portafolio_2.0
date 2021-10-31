@@ -608,6 +608,11 @@ body {
   background: #161c24;
 }
 
+.container__principal {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 header {
   text-align: center;
 }
@@ -1107,3 +1112,4 @@ footer {
   color: #fff;
   font-family: "Public Sans", sans-serif;
 }
+/*# sourceMappingURL=main.css.map */
