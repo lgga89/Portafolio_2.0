@@ -16,18 +16,21 @@
     .about__button {
       text-align: center;
       button {
-        border-color: rgb(255, 255, 255);
+        //border-color: rgb(255, 255, 255);
         background: transparent;
-        color: #fff;
+        //color: #fff;
         font-size: 15px;
-        cursor: pointer;
-        align-items: center;
-        padding: 10px 21px;
-        font-family: "Public Sans";
-        font-weight: 700;
-        text-transform: none;
-        margin: 15px 21px;
-        border-radius: 10px;
+
+        .link {
+          cursor: pointer;
+          align-items: center;
+          padding: 10px 21px;
+          font-family: "Public Sans";
+          font-weight: 700;
+          text-transform: none;
+          margin: 15px 21px;
+          border-radius: 10px;
+        }
       }
     }
   }
