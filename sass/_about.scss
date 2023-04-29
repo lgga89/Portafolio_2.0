@@ -15,21 +15,14 @@
     border-radius: 40px;
     .about__button {
       text-align: center;
-      button {
-        //border-color: rgb(255, 255, 255);
-        background: transparent;
-        //color: #fff;
-        font-size: 15px;
+      .link {
+        cursor: pointer;
 
-        .link {
-          cursor: pointer;
-          align-items: center;
-          padding: 10px 21px;
-          font-family: "Public Sans";
-          font-weight: 700;
-          text-transform: none;
-          margin: 15px 21px;
-          border-radius: 10px;
+        button {
+          border-color: rgb(255, 255, 255);
+          background: transparent;
+          color: #fff;
+          font-size: 15px;
         }
       }
     }
